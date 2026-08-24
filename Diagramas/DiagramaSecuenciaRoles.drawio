@@ -1,0 +1,215 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Secuencia roles" id="secuencia-roles-negocio">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1500" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="actor-paciente" value=":Paciente" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="70" y="30" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-recepcionista" value=":Recepcionista" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="320" y="30" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-profesional" value=":Profesional" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="580" y="30" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-administrador" value=":Administrador" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="850" y="30" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-auditor" value=":Auditor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="30" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="life-paciente" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="80" as="sourcePoint" />
+            <mxPoint x="130" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-recepcionista" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="80" as="sourcePoint" />
+            <mxPoint x="385" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-profesional" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="645" y="80" as="sourcePoint" />
+            <mxPoint x="645" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-administrador" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="80" as="sourcePoint" />
+            <mxPoint x="920" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-auditor" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1200" y="80" as="sourcePoint" />
+            <mxPoint x="1200" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="act-paciente" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="123" y="110" width="14" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="act-recepcionista-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="378" y="135" width="14" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="act-profesional-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="638" y="220" width="14" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="act-profesional-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="638" y="485" width="14" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="act-recepcionista-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="378" y="600" width="14" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="act-administrador" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="913" y="120" width="14" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="act-auditor" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1193" y="820" width="14" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="loop-frame" value="" style="swimlane;startSize=24;horizontal=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="45" y="185" width="720" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="loop-label" value="Loop" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="50" y="188" width="50" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="loop-condition" value="[hasta encontrar turno disponible]" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="105" y="188" width="220" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="alt-autogestion" value="" style="swimlane;startSize=24;horizontal=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="45" y="425" width="720" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="alt-label" value="Alt" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="50" y="428" width="50" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="alt-condition" value="[autogestión del paciente]" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="105" y="428" width="220" height="22" as="geometry" />
+        </mxCell>
+
+        <mxCell id="msg-definir-roles" value="DefinirRolesYPermisos()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="913" y="130" as="sourcePoint" />
+            <mxPoint x="378" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ret-roles" value="RolesHabilitados()" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="378" y="165" as="sourcePoint" />
+            <mxPoint x="913" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg-solicitar" value="SolicitarTurno()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="137" y="225" as="sourcePoint" />
+            <mxPoint x="378" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-consultar" value="ConsultarDisponibilidad()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="392" y="260" as="sourcePoint" />
+            <mxPoint x="638" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-informar" value="InformarHorarioDisponible()" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="638" y="315" as="sourcePoint" />
+            <mxPoint x="392" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-proponer" value="ProponerTurno()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="378" y="350" as="sourcePoint" />
+            <mxPoint x="137" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-aceptar" value="AceptarTurno()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="137" y="390" as="sourcePoint" />
+            <mxPoint x="378" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg-confirmar-paciente" value="ConfirmarTurnoAsistido()" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="378" y="450" as="sourcePoint" />
+            <mxPoint x="137" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-autoconsultar" value="ConsultarDisponibilidad()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="137" y="485" as="sourcePoint" />
+            <mxPoint x="638" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ret-autoconsultar" value="HorariosDisponibles()" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="638" y="520" as="sourcePoint" />
+            <mxPoint x="137" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-autoreservar" value="ReservarTurno()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="137" y="555" as="sourcePoint" />
+            <mxPoint x="638" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ret-autoreservar" value="TurnoConfirmado()" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="638" y="590" as="sourcePoint" />
+            <mxPoint x="137" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-notificar-prof" value="NotificarAgenda()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="392" y="625" as="sourcePoint" />
+            <mxPoint x="638" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-atender" value="AtenderPaciente()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="137" y="650" as="sourcePoint" />
+            <mxPoint x="638" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ret-atencion" value="RegistrarAtencion()" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="638" y="685" as="sourcePoint" />
+            <mxPoint x="392" y="685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-cierre" value="CerrarTurno()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="392" y="725" as="sourcePoint" />
+            <mxPoint x="137" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ret-comprobante" value="EntregarComprobante()" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="378" y="760" as="sourcePoint" />
+            <mxPoint x="137" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-auditoria" value="SolicitarTrazabilidad()" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1193" y="835" as="sourcePoint" />
+            <mxPoint x="378" y="835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ret-auditoria" value="InformarEventosAuditados()" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="378" y="875" as="sourcePoint" />
+            <mxPoint x="1193" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

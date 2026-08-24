@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE12B97C-D2B5-4DBB-89B5-7E3E72BBA151}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Domain</RootNamespace>
+    <AssemblyName>Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auditoria\AuditoriaCambio.cs" />
+    <Compile Include="Auditoria\AuditoriaMemento.cs" />
+    <Compile Include="Auditoria\AuditoriaRegistro.cs" />
+    <Compile Include="Bitacora\Bitacora.cs" />
+    <Compile Include="Bitacora\BitacoraFactory.cs" />
+    <Compile Include="Bitacora\BitacoraRegistro.cs" />
+    <Compile Include="Bitacora\BitacoraRegistroMapper.cs" />
+    <Compile Include="Bitacora\IBitacoraEvento.cs" />
+    <Compile Include="Bitacora\LoginExitosoBitacoraFactory.cs" />
+    <Compile Include="Bitacora\LoginFallidoBitacoraFactory.cs" />
+    <Compile Include="Bitacora\RegistroFallidoBitacoraFactory.cs" />
+    <Compile Include="Idiomas\Etiqueta.cs" />
+    <Compile Include="Idiomas\Idioma.cs" />
+    <Compile Include="Idiomas\Traduccion.cs" />
+    <Compile Include="Permisos\ComponentePermiso.cs" />
+    <Compile Include="Permisos\FamiliaPermiso.cs" />
+    <Compile Include="Permisos\Permiso.cs" />
+    <Compile Include="Permisos\PermisosSistema.cs" />
+    <Compile Include="Permisos\TipoComponentePermiso.cs" />
+    <Compile Include="Seguridad\Sesion.cs" />
+    <Compile Include="Usuarios\CodigoRegistroUsuario.cs" />
+    <Compile Include="Usuarios\Usuario.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Abstractions\Abstractions.csproj">
+      <Project>{ec2907e8-4417-4320-b769-767f15bbe62d}</Project>
+      <Name>Abstractions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

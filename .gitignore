@@ -1,0 +1,11 @@
+bin/
+obj/
+.dotnet/
+*.exe
+*.dll
+*.pdb
+.vs/
+*.user
+*.suo
+*.tmp
+UI/App.local.config

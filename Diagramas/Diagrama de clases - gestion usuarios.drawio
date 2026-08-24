@@ -1,0 +1,188 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Gestion de usuarios" id="gestion-usuarios-uml">
+    <mxGraphModel dx="1500" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="pkg-ui" value="" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=28;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#f8f9fa;strokeColor=#6c757d;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="340" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-application" value="" style="shape=folder;fontStyle=1;tabWidth=120;tabHeight=28;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#f8f9fa;strokeColor=#6c757d;" vertex="1" parent="1">
+          <mxGeometry x="430" y="40" width="340" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-repository" value="" style="shape=folder;fontStyle=1;tabWidth=120;tabHeight=28;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#f8f9fa;strokeColor=#6c757d;" vertex="1" parent="1">
+          <mxGeometry x="820" y="40" width="340" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-dal" value="" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=28;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#f8f9fa;strokeColor=#6c757d;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="40" width="340" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-domain" value="" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=28;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#f8f9fa;strokeColor=#6c757d;" vertex="1" parent="1">
+          <mxGeometry x="430" y="740" width="540" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-services" value="" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=28;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#f8f9fa;strokeColor=#6c757d;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="740" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-ui-tab-label" value="UI" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;align=center;verticalAlign=middle;resizable=0;movable=0;connectable=0;points=[];" vertex="1" parent="1">
+          <mxGeometry x="46" y="44" width="68" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-application-tab-label" value="Application" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;align=center;verticalAlign=middle;resizable=0;movable=0;connectable=0;points=[];" vertex="1" parent="1">
+          <mxGeometry x="436" y="44" width="108" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-repository-tab-label" value="Repository" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;align=center;verticalAlign=middle;resizable=0;movable=0;connectable=0;points=[];" vertex="1" parent="1">
+          <mxGeometry x="826" y="44" width="108" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-dal-tab-label" value="DAL" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;align=center;verticalAlign=middle;resizable=0;movable=0;connectable=0;points=[];" vertex="1" parent="1">
+          <mxGeometry x="1216" y="44" width="68" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-domain-tab-label" value="Domain" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;align=center;verticalAlign=middle;resizable=0;movable=0;connectable=0;points=[];" vertex="1" parent="1">
+          <mxGeometry x="436" y="744" width="88" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-services-tab-label" value="Services" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;align=center;verticalAlign=middle;resizable=0;movable=0;connectable=0;points=[];" vertex="1" parent="1">
+          <mxGeometry x="1016" y="744" width="88" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="MainForm" value="MainForm" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="75" y="120" width="270" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="MainForm-attr" value="- contentPanel: Panel" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="MainForm">
+          <mxGeometry y="30" width="270" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="MainForm-op" value="+ ShowScreen(screen: UserControl): void&lt;br/&gt;- usuariosToolStripMenuItem_Click(sender, e): void" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="MainForm">
+          <mxGeometry y="66" width="270" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="UsuariosView" value="UsuariosView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="75" y="325" width="270" height="296" as="geometry" />
+        </mxCell>
+        <mxCell id="UsuariosView-attr" value="- _usuarioService: UsuarioApplicationService&lt;br/&gt;- _usuarios: List&amp;lt;Usuario&amp;gt;&lt;br/&gt;- _usuarioSeleccionado: Usuario&lt;br/&gt;- _preparandoFormulario: bool" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="UsuariosView">
+          <mxGeometry y="30" width="270" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="UsuariosView-op" value="+ UsuariosView()&lt;br/&gt;- ConfigurarGrilla(): void&lt;br/&gt;- CargarUsuarios(): void&lt;br/&gt;- CrearUsuario(): void&lt;br/&gt;- ModificarUsuario(): void&lt;br/&gt;- PrepararNuevoUsuario(): void&lt;br/&gt;- btnInhabilitar_Click(sender, e): void" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="UsuariosView">
+          <mxGeometry y="122" width="270" height="174" as="geometry" />
+        </mxCell>
+
+        <mxCell id="UsuarioApplicationService" value="UsuarioApplicationService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="465" y="215" width="270" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="UsuarioApplicationService-attr" value="- _usuarioRepository: UsuarioRepository&lt;br/&gt;- _permisoRepository: PermisoRepository&lt;br/&gt;- _bitacoraRepository: BitacoraRepository&lt;br/&gt;- _auditoriaService: AuditoriaApplicationService&lt;br/&gt;- _digitoVerificadorService: DigitoVerificadorApplicationService&lt;br/&gt;- _passwordService: PlainTextPasswordService&lt;br/&gt;- _serializer: JavaScriptSerializer&lt;br/&gt;- _bitacoraFactory: BitacoraFactory" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="UsuarioApplicationService">
+          <mxGeometry y="30" width="270" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="UsuarioApplicationService-op" value="+ CrearUsuario(nuevoUsuario: Usuario): CodigoRegistroUsuario&lt;br/&gt;+ ModificarUsuario(usuario: Usuario): bool&lt;br/&gt;+ InhabilitarUsuario(usuario: Usuario): bool&lt;br/&gt;+ Listar(): List&amp;lt;Usuario&amp;gt;&lt;br/&gt;+ Login(username: string, password: string): Usuario&lt;br/&gt;+ ExisteUsuario(username: string): bool&lt;br/&gt;+ EstaBloqueado(username: string): bool&lt;br/&gt;+ RecalcularDigitosVerificadoresUsuarios(): bool&lt;br/&gt;+ HayBloqueoDigitoVerificador(): bool&lt;br/&gt;+ RestaurarCampoDesdeAuditoria(auditoria, campo): bool" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="UsuarioApplicationService">
+          <mxGeometry y="122" width="270" height="168" as="geometry" />
+        </mxCell>
+
+        <mxCell id="UsuarioRepository" value="UsuarioRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="855" y="230" width="270" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="UsuarioRepository-attr" value="- _usuarioDataMapper: UsuarioDataMapper" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="UsuarioRepository">
+          <mxGeometry y="30" width="270" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="UsuarioRepository-op" value="+ Crear(usuario: Usuario): CodigoRegistroUsuario&lt;br/&gt;+ Modificar(usuario: Usuario): bool&lt;br/&gt;+ Inhabilitar(usuario: Usuario): bool&lt;br/&gt;+ Listar(): List&amp;lt;Usuario&amp;gt;&lt;br/&gt;+ Guardar(usuario: Usuario): void&lt;br/&gt;+ Borrar(usuario: Usuario): void&lt;br/&gt;+ ObtenerPorCredenciales(username, password): Usuario&lt;br/&gt;+ ObtenerActivoPorIdentificador(id): Usuario&lt;br/&gt;+ RegistrarLoginFallidoPorIdentificador(id): int&lt;br/&gt;+ ReiniciarIntentosLoginFallidos(idUsuario): bool&lt;br/&gt;+ RestaurarCampo(idUsuario, campo, valor): bool" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="UsuarioRepository">
+          <mxGeometry y="66" width="270" height="194" as="geometry" />
+        </mxCell>
+
+        <mxCell id="UsuarioDataMapper" value="UsuarioDataMapper" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="1245" y="130" width="270" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="UsuarioDataMapper-attr" value="- _databaseContext: DatabaseContext" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="UsuarioDataMapper">
+          <mxGeometry y="30" width="270" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="UsuarioDataMapper-op" value="+ Insertar(usuario: Usuario): CodigoRegistroUsuario&lt;br/&gt;+ Editar(usuario: Usuario): int&lt;br/&gt;+ Borrar(usuario: Usuario): int&lt;br/&gt;+ Listar(): List&amp;lt;Usuario&amp;gt;&lt;br/&gt;+ ObtenerPorCredenciales(identificador, passwordHash): Usuario&lt;br/&gt;+ ObtenerActivoPorIdentificador(identificador): Usuario&lt;br/&gt;+ ObtenerPorId(id): Usuario&lt;br/&gt;+ RegistrarLoginFallidoPorIdentificador(id): int&lt;br/&gt;+ ReiniciarIntentosLoginFallidos(idUsuario): int&lt;br/&gt;+ RestaurarCampo(idUsuario, campo, valor): int&lt;br/&gt;- MapearUsuario(registro: DataRow): Usuario" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="UsuarioDataMapper">
+          <mxGeometry y="66" width="270" height="244" as="geometry" />
+        </mxCell>
+
+        <mxCell id="DatabaseContext" value="DatabaseContext" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="1245" y="485" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="DatabaseContext-attr" value="+ Conexion: SqlConnection&lt;br/&gt;+ Transaccion: SqlTransaction" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="DatabaseContext">
+          <mxGeometry y="30" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DatabaseContext-op" value="+ Abrir(): void&lt;br/&gt;+ Cerrar(): void&lt;br/&gt;+ CrearParametro(...): SqlParameter&lt;br/&gt;+ LeerTexto(...): DataTable&lt;br/&gt;+ Escribir(...): int" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="DatabaseContext">
+          <mxGeometry y="80" width="270" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Usuario" value="Usuario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="465" y="810" width="230" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Usuario-attr" value="+ Id: int&lt;br/&gt;+ Username: string&lt;br/&gt;+ Email: string&lt;br/&gt;+ Password: string&lt;br/&gt;+ Nombre: string&lt;br/&gt;+ Apellido: string&lt;br/&gt;+ Idioma: string&lt;br/&gt;+ IdiomaPreferidoId: int?&lt;br/&gt;+ Estado: string&lt;br/&gt;+ IntentosLoginFallidos: int&lt;br/&gt;+ BloqueoDigitoVerificador: bool&lt;br/&gt;+ Dvh: string&lt;br/&gt;+ ComponentesPermiso: List&amp;lt;ComponentePermiso&amp;gt;" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="Usuario">
+          <mxGeometry y="30" width="230" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="Usuario-op" value="+ CrearMemento(): AuditoriaMemento&lt;br/&gt;+ RestoreFromMemento(memento): void&lt;br/&gt;+ TienePermiso(codigoPermiso): bool&lt;br/&gt;+ ToString(): string" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="Usuario">
+          <mxGeometry y="176" width="230" height="34" as="geometry" />
+        </mxCell>
+
+        <mxCell id="CodigoRegistroUsuario" value="&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;br/&gt;CodigoRegistroUsuario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="735" y="810" width="220" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="CodigoRegistroUsuario-literals" value="Creado&lt;br/&gt;DatosInvalidos&lt;br/&gt;EmailInvalido&lt;br/&gt;UsuarioExistente&lt;br/&gt;EmailExistente&lt;br/&gt;IdiomaDefaultInexistente&lt;br/&gt;ErrorBaseDatos" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="CodigoRegistroUsuario">
+          <mxGeometry y="46" width="220" height="144" as="geometry" />
+        </mxCell>
+
+        <mxCell id="PlainTextPasswordService" value="PlainTextPasswordService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="825" width="140" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="PlainTextPasswordService-op" value="+ Hash(password: string): string" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="PlainTextPasswordService">
+          <mxGeometry y="30" width="140" height="62" as="geometry" />
+        </mxCell>
+
+        <mxCell id="DigitoVerificadorApplicationService" value="DigitoVerificadorApplicationService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="740" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="DigitoVerificadorApplicationService-attr" value="- _digitoVerificadorRepository: DigitoVerificadorRepository" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="DigitoVerificadorApplicationService">
+          <mxGeometry y="30" width="280" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="DigitoVerificadorApplicationService-op" value="+ VerificarUsuarios(): bool&lt;br/&gt;+ RecalcularUsuarios(): bool&lt;br/&gt;+ RecalcularUsuarioYDvv(idUsuario): bool&lt;br/&gt;+ HayBloqueoUsuarios(): bool" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="DigitoVerificadorApplicationService">
+          <mxGeometry y="72" width="280" height="108" as="geometry" />
+        </mxCell>
+
+        <mxCell id="DigitoVerificadorRepository" value="DigitoVerificadorRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#343a40;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="950" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="DigitoVerificadorRepository-attr" value="- _digitoVerificadorDataMapper: DigitoVerificadorDataMapper" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="DigitoVerificadorRepository">
+          <mxGeometry y="30" width="280" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="DigitoVerificadorRepository-op" value="+ VerificarUsuarios(): bool&lt;br/&gt;+ RecalcularUsuarios(): bool&lt;br/&gt;+ RecalcularUsuarioYDvv(idUsuario): bool&lt;br/&gt;+ HayBloqueoUsuarios(): bool" style="text;strokeColor=#343a40;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;html=1;" vertex="1" parent="DigitoVerificadorRepository">
+          <mxGeometry y="72" width="280" height="88" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge-main-view" value="&amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="MainForm" target="UsuariosView">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-view-service" value="- _usuarioService" style="endArrow=open;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="UsuariosView" target="UsuarioApplicationService">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-service-repo" value="- _usuarioRepository" style="endArrow=open;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="UsuarioApplicationService" target="UsuarioRepository">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-repo-mapper" value="- _usuarioDataMapper" style="endArrow=open;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="UsuarioRepository" target="UsuarioDataMapper">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-mapper-db" value="- _databaseContext" style="endArrow=open;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="UsuarioDataMapper" target="DatabaseContext">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-service-usuario" value="&amp;lt;&amp;lt;use&amp;gt;&amp;gt;" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="UsuarioApplicationService" target="Usuario">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-repo-usuario" value="&amp;lt;&amp;lt;use&amp;gt;&amp;gt;" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="UsuarioRepository" target="Usuario">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-mapper-usuario" value="&amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="UsuarioDataMapper" target="Usuario">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-service-enum" value="&amp;lt;&amp;lt;use&amp;gt;&amp;gt;" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="UsuarioApplicationService" target="CodigoRegistroUsuario">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-service-password" value="- _passwordService" style="endArrow=open;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="UsuarioApplicationService" target="PlainTextPasswordService">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-service-dv" value="- _digitoVerificadorService" style="endArrow=open;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="UsuarioApplicationService" target="DigitoVerificadorApplicationService">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-dv-repo" value="- _digitoVerificadorRepository" style="endArrow=open;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="DigitoVerificadorApplicationService" target="DigitoVerificadorRepository">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
