@@ -7,7 +7,7 @@ namespace DAL
 {
     public class DatabaseContext
     {
-        private const string CadenaConexion_180_njab = "Data Source=.;Initial Catalog=TecniSalud;Integrated Security=SSPI";
+        private const string CadenaConexion_180_njab = "Data Source=.\\SQLEXPRESS;Initial Catalog=TecniSalud;Integrated Security=SSPI";
 
         public SqlConnection Conexion { get; private set; }
         public SqlTransaction Transaccion { get; private set; }
