@@ -25,5 +25,7 @@ namespace Domain
         public const string IdiomaEditar = "IDIOMA_EDITAR";
         public const string TraduccionVer = "TRADUCCION_VER";
         public const string TraduccionEditar = "TRADUCCION_EDITAR";
+
+        public const string ProfesionalVer_180_njab = "PROFESIONAL_VER";
     }
 }

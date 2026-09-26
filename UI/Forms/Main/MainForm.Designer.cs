@@ -30,6 +30,7 @@ namespace UI
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.idiomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profesionalesToolStripMenuItem_180_njab = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.topPanel = new System.Windows.Forms.Panel();
             this.cmbIdiomas = new System.Windows.Forms.ComboBox();
@@ -49,6 +50,7 @@ namespace UI
             this.usuariosToolStripMenuItem,
             this.rolesToolStripMenuItem,
             this.idiomasToolStripMenuItem,
+            this.profesionalesToolStripMenuItem_180_njab,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -100,6 +102,14 @@ namespace UI
             this.idiomasToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.idiomasToolStripMenuItem.Text = "Idiomas";
             this.idiomasToolStripMenuItem.Click += new System.EventHandler(this.idiomasToolStripMenuItem_Click);
+            // profesionalesToolStripMenuItem_180_njab
+            //
+            this.profesionalesToolStripMenuItem_180_njab.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.profesionalesToolStripMenuItem_180_njab.ForeColor = System.Drawing.Color.White;
+            this.profesionalesToolStripMenuItem_180_njab.Name = "profesionalesToolStripMenuItem_180_njab";
+            this.profesionalesToolStripMenuItem_180_njab.Size = new System.Drawing.Size(105, 24);
+            this.profesionalesToolStripMenuItem_180_njab.Text = "Profesionales";
+            this.profesionalesToolStripMenuItem_180_njab.Click += new System.EventHandler(this.profesionalesToolStripMenuItem_Click_180_njab);
             // 
             // salirToolStripMenuItem
             // 
@@ -199,6 +209,7 @@ namespace UI
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rolesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem idiomasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem profesionalesToolStripMenuItem_180_njab;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.ComboBox cmbIdiomas;

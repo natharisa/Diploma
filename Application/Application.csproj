@@ -38,6 +38,7 @@
     <Compile Include="Auditoria\AuditoriaApplicationService.cs" />
     <Compile Include="BitacoraApplicationService.cs" />
     <Compile Include="Permisos\PermisoApplicationService.cs" />
+    <Compile Include="Profesionales\ProfesionalApplicationService_180_njab.cs" />
     <Compile Include="Seguridad\AutorizacionApplicationService.cs" />
     <Compile Include="Seguridad\DigitoVerificadorApplicationService.cs" />
     <Compile Include="Idiomas\IdiomaApplicationService.cs" />

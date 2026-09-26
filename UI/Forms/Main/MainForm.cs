@@ -119,6 +119,18 @@ namespace UI
             ShowScreen(new UsuariosView());
         }
 
+        private void profesionalesToolStripMenuItem_Click_180_njab(object sender_180_njab, EventArgs e_180_njab)
+        {
+            if (!_autorizacionService.TienePermiso(PermisosSistema.ProfesionalVer_180_njab) &&
+                !_autorizacionService.TienePermiso(PermisosSistema.Administrador))
+            {
+                MessageBox.Show(LanguageManager.Instance.Translate("SECURITY_ACCESS_DENIED"));
+                return;
+            }
+
+            ShowScreen(new ProfesionalesView_180_njab());
+        }
+
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             _usuarioService.RecalcularDigitosVerificadoresUsuarios();
@@ -181,6 +193,8 @@ namespace UI
             rolesToolStripMenuItem.Visible = _autorizacionService.TienePermiso(PermisosSistema.RolVer);
             idiomasToolStripMenuItem.Visible = _autorizacionService.TienePermiso(PermisosSistema.IdiomaVer) ||
                                                _autorizacionService.TienePermiso(PermisosSistema.TraduccionVer);
+            profesionalesToolStripMenuItem_180_njab.Visible = _autorizacionService.TienePermiso(PermisosSistema.ProfesionalVer_180_njab) ||
+                                                               _autorizacionService.TienePermiso(PermisosSistema.Administrador);
         }
 
         private void MostrarPantallaInicial()
@@ -212,6 +226,12 @@ namespace UI
             if (idiomasToolStripMenuItem.Visible)
             {
                 ShowScreen(new IdiomasView());
+                return;
+            }
+
+            if (profesionalesToolStripMenuItem_180_njab.Visible)
+            {
+                ShowScreen(new ProfesionalesView_180_njab());
                 return;
             }
 

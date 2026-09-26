@@ -252,7 +252,7 @@ GO
 CREATE TABLE Profesional (
     id_profesional INT IDENTITY(1,1) PRIMARY KEY,
     id_usuario INT NOT NULL,
-    id_especialidad INT NOT NULL,
+    dni VARCHAR(20) NULL,
     matricula VARCHAR(50) NOT NULL,
     nombre VARCHAR(100) NOT NULL,
     apellido VARCHAR(100) NOT NULL,
@@ -262,8 +262,21 @@ CREATE TABLE Profesional (
     CONSTRAINT UQ_Profesional_Usuario UNIQUE (id_usuario),
     CONSTRAINT UQ_Profesional_Matricula UNIQUE (matricula),
     CONSTRAINT CK_Profesional_Estado CHECK (estado_profesional IN ('Activo', 'Inactivo')),
-    CONSTRAINT FK_Profesional_Usuario FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
-    CONSTRAINT FK_Profesional_Especialidad FOREIGN KEY (id_especialidad) REFERENCES Especialidad(id_especialidad)
+    CONSTRAINT FK_Profesional_Usuario FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+);
+GO
+
+CREATE UNIQUE INDEX UX_Profesional_DNI
+    ON Profesional(dni)
+    WHERE dni IS NOT NULL;
+GO
+
+CREATE TABLE ProfesionalEspecialidad (
+    id_profesional INT NOT NULL,
+    id_especialidad INT NOT NULL,
+    CONSTRAINT PK_ProfesionalEspecialidad PRIMARY KEY (id_profesional, id_especialidad),
+    CONSTRAINT FK_ProfesionalEspecialidad_Profesional FOREIGN KEY (id_profesional) REFERENCES Profesional(id_profesional),
+    CONSTRAINT FK_ProfesionalEspecialidad_Especialidad FOREIGN KEY (id_especialidad) REFERENCES Especialidad(id_especialidad)
 );
 GO
 
@@ -951,6 +964,7 @@ INSERT INTO ComponentePermiso (codigo, nombre, descripcion, tipo) VALUES
 ('IDIOMA_EDITAR', 'Editar idiomas', 'Permite modificar y activar o desactivar idiomas', 'PERMISO'),
 ('TRADUCCION_VER', 'Ver traducciones', 'Permite ver el arbol de etiquetas y traducciones de UI', 'PERMISO'),
 ('TRADUCCION_EDITAR', 'Editar traducciones', 'Permite crear o modificar traducciones detectadas desde la UI', 'PERMISO'),
+('PROFESIONAL_VER', 'Ver profesionales', 'Permite consultar profesionales para iniciar la asignacion de jornadas', 'PERMISO'),
 ('BITACORA_VER', 'Ver bitacora', 'Permite consultar la bitacora del sistema', 'PERMISO'),
 ('AUDITORIA_CAMBIOS_VER', 'Ver auditoria de cambios', 'Permite consultar el historial de cambios de entidades auditadas', 'PERMISO');
 GO
@@ -959,7 +973,7 @@ INSERT INTO ComponentePermisoRelacion (id_padre, id_hijo)
 SELECT padre.id_componente, hijo.id_componente
 FROM ComponentePermiso padre
 INNER JOIN ComponentePermiso hijo
-    ON hijo.codigo IN ('SEGURIDAD', 'AUDITORIA', 'IDIOMAS_TRADUCCIONES', 'USUARIO_VER', 'USUARIO_CREAR', 'USUARIO_EDITAR', 'USUARIO_INHABILITAR')
+    ON hijo.codigo IN ('SEGURIDAD', 'AUDITORIA', 'IDIOMAS_TRADUCCIONES', 'USUARIO_VER', 'USUARIO_CREAR', 'USUARIO_EDITAR', 'USUARIO_INHABILITAR', 'PROFESIONAL_VER')
 WHERE padre.codigo = 'ADMINISTRADOR';
 GO
 

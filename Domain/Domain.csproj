@@ -51,6 +51,7 @@
     <Compile Include="Permisos\FamiliaPermiso.cs" />
     <Compile Include="Permisos\Permiso.cs" />
     <Compile Include="Permisos\PermisosSistema.cs" />
+    <Compile Include="Profesionales\ProfesionalConsulta_180_njab.cs" />
     <Compile Include="Permisos\TipoComponentePermiso.cs" />
     <Compile Include="Seguridad\Sesion.cs" />
     <Compile Include="Usuarios\CodigoRegistroUsuario.cs" />
