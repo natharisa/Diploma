@@ -36,6 +36,14 @@ namespace DAL
             }
         }
 
+        public void IniciarTx_180_njab(IsolationLevel nivel_180_njab)
+        {
+            if (Conexion != null)
+            {
+                Transaccion = Conexion.BeginTransaction(nivel_180_njab);
+            }
+        }
+
         public void Confirmar()
         {
             if (Transaccion != null)
@@ -123,6 +131,14 @@ namespace DAL
                 adaptador.SelectCommand = CrearComando(sql, parametros, CommandType.Text);
                 adaptador.Fill(tabla);
                 return tabla;
+            }
+        }
+
+        public object EjecutarEscalarTexto_180_njab(string sql_180_njab, List<SqlParameter> parametros_180_njab = null)
+        {
+            using (SqlCommand comando_180_njab = CrearComando(sql_180_njab, parametros_180_njab, CommandType.Text))
+            {
+                return comando_180_njab.ExecuteScalar();
             }
         }
 

@@ -53,6 +53,8 @@
     <Compile Include="Permisos\PermisosSistema.cs" />
     <Compile Include="Profesionales\ProfesionalConsulta_180_njab.cs" />
     <Compile Include="Permisos\TipoComponentePermiso.cs" />
+    <Compile Include="Profesionales\JornadaFranja_180_njab.cs" />
+    <Compile Include="Profesionales\JornadaProfesional_180_njab.cs" />
     <Compile Include="Seguridad\Sesion.cs" />
     <Compile Include="Usuarios\CodigoRegistroUsuario.cs" />
     <Compile Include="Usuarios\Usuario.cs" />

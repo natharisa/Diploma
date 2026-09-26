@@ -59,6 +59,9 @@
     <Compile Include="Views\Profesionales\ProfesionalesView_180_njab.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Views\Profesionales\JornadaProfesionalView_180_njab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Views\Bitacora\BitacoraView.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -60,10 +60,6 @@ namespace DAL
 
                 return profesionales_180_njab;
             }
-            catch
-            {
-                return new List<ProfesionalConsulta_180_njab>();
-            }
             finally
             {
                 _databaseContext_180_njab.Cerrar();

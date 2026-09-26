@@ -294,6 +294,7 @@ CREATE TABLE JornadaProfesional (
     id_jornada INT IDENTITY(1,1) PRIMARY KEY,
     id_profesional INT NOT NULL,
     id_consultorio INT NOT NULL,
+    id_especialidad INT NULL,
     fecha DATE NOT NULL,
     hora_inicio TIME NOT NULL,
     hora_fin TIME NOT NULL,
@@ -301,9 +302,11 @@ CREATE TABLE JornadaProfesional (
     estado_jornada VARCHAR(20) NOT NULL DEFAULT 'Activa',
     CONSTRAINT CK_Jornada_Horario CHECK (hora_fin > hora_inicio),
     CONSTRAINT CK_Jornada_Duracion CHECK (duracion_turno_min > 0),
+    CONSTRAINT CK_Jornada_DuracionRango CHECK (duracion_turno_min <= DATEDIFF(MINUTE, CAST(hora_inicio AS DATETIME), CAST(hora_fin AS DATETIME))),
     CONSTRAINT CK_Jornada_Estado CHECK (estado_jornada IN ('Activa', 'Cancelada', 'Finalizada')),
     CONSTRAINT FK_Jornada_Profesional FOREIGN KEY (id_profesional) REFERENCES Profesional(id_profesional),
-    CONSTRAINT FK_Jornada_Consultorio FOREIGN KEY (id_consultorio) REFERENCES Consultorio(id_consultorio)
+    CONSTRAINT FK_Jornada_Consultorio FOREIGN KEY (id_consultorio) REFERENCES Consultorio(id_consultorio),
+    CONSTRAINT FK_Jornada_Especialidad FOREIGN KEY (id_especialidad) REFERENCES Especialidad(id_especialidad)
 );
 GO
 
@@ -557,6 +560,9 @@ GO
 CREATE INDEX IX_Turno_Paciente ON Turno(id_paciente);
 CREATE INDEX IX_Turno_Jornada ON Turno(id_jornada);
 CREATE INDEX IX_Turno_FechaHora ON Turno(fecha_hora_inicio, fecha_hora_fin);
+CREATE INDEX IX_JornadaProfesional_Activas_Fecha_Horario
+    ON JornadaProfesional(fecha, hora_inicio, hora_fin, id_profesional, id_consultorio)
+    WHERE estado_jornada = 'Activa';
 CREATE INDEX IX_Pago_Turno ON Pago(id_turno);
 CREATE INDEX IX_Pago_Paciente ON Pago(id_paciente);
 CREATE INDEX IX_MovimientoStock_Insumo ON MovimientoStock(id_insumo);

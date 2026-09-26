@@ -128,7 +128,7 @@ namespace UI
                 return;
             }
 
-            ShowScreen(new ProfesionalesView_180_njab());
+            ShowScreen(new ProfesionalesView_180_njab(MostrarPantallaProfesionales_180_njab));
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -144,6 +144,11 @@ namespace UI
             contentPanel.Controls.Clear();
             screen.Dock = DockStyle.Fill;
             contentPanel.Controls.Add(screen);
+        }
+
+        private void MostrarPantallaProfesionales_180_njab(UserControl pantalla_180_njab)
+        {
+            ShowScreen(pantalla_180_njab);
         }
 
         public void RefrescarIdiomasDisponibles()
@@ -231,7 +236,7 @@ namespace UI
 
             if (profesionalesToolStripMenuItem_180_njab.Visible)
             {
-                ShowScreen(new ProfesionalesView_180_njab());
+                ShowScreen(new ProfesionalesView_180_njab(MostrarPantallaProfesionales_180_njab));
                 return;
             }
 

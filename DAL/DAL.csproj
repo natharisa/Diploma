@@ -48,6 +48,7 @@
     <Compile Include="Idiomas\TraduccionDataMapper.cs" />
     <Compile Include="Infrastructure\DatabaseContext.cs" />
     <Compile Include="Permisos\PermisoDataMapper.cs" />
+    <Compile Include="Profesionales\JornadaDataMapper_180_njab.cs" />
     <Compile Include="Profesionales\ProfesionalDataMapper_180_njab.cs" />
     <Compile Include="Seguridad\DigitoVerificadorDataMapper.cs" />
     <Compile Include="Usuarios\UsuarioDataMapper.cs" />

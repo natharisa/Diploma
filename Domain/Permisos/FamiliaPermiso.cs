@@ -58,6 +58,11 @@ namespace Domain
                 return false;
             }
 
+            if (string.Equals(Codigo, codigoPermiso, StringComparison.OrdinalIgnoreCase))
+            {
+                return true;
+            }
+
             foreach (ComponentePermiso hijo in _hijos)
             {
                 if (hijo.TienePermiso(codigoPermiso))
